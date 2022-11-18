@@ -9,7 +9,7 @@
   </head>
   <body>
     <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
-    <div class="accordeon" x-data="{isOpen=1}">
+    <div class="accordeon" x-data="{isOpen=0}">
       <section>
         <button @click="isOpen = 1">bouton1</button>
         <p x-show="isOpen === 1" x-transition>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum aperiam ea aliquid esse saepe dicta repellat iure ex? Ullam explicabo necessitatibus nihil cupiditate aspernatur, earum itaque unde accusantium nobis atque?</p>
