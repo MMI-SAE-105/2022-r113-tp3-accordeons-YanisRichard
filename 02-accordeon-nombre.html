@@ -12,7 +12,7 @@
     <div class="accordeon" x-data="{isOpen:0}">
       <section>
         <button @click="isOpen = 1">bouton1</button>
-        <p x-show="isOpen === 1" x-transition>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum aperiam ea aliquid esse saepe dicta repellat iure ex? Ullam explicabo necessitatibus nihil cupiditate aspernatur, earum itaque unde accusantium nobis atque?</p>
+        <p x-show="isOpen === 1" x-transition.scale.origine.top>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum aperiam ea aliquid esse saepe dicta repellat iure ex? Ullam explicabo necessitatibus nihil cupiditate aspernatur, earum itaque unde accusantium nobis atque?</p>
       </section>
 
       <section>
@@ -22,7 +22,7 @@
 
       <section>
         <button @click="isOpen = 3">bouton3</button>
-        <p x-show="isOpen === 3" x-transition>Quia enim vitae molestiae, suscipit, impedit eos nemo incidunt modi consectetur dolorem amet explicabo cupiditate, sequi repellendus recusandae similique nam perspiciatis ea mollitia. Corrupti dicta aliquam velit. Repudiandae, ea reprehenderit!</p>
+        <p x-show="isOpen === 3" x-transition.scale.origine.top>Quia enim vitae molestiae, suscipit, impedit eos nemo incidunt modi consectetur dolorem amet explicabo cupiditate, sequi repellendus recusandae similique nam perspiciatis ea mollitia. Corrupti dicta aliquam velit. Repudiandae, ea reprehenderit!</p>
       </section>
 
     </div>
