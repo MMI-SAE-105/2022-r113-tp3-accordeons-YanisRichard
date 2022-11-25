@@ -29,8 +29,8 @@
 
     #accordeon li figure {
     align-items: left;
-     display: inline-block;
-     width: 317px;
+    margin: 0;
+    width: 317px;
     }
 
     ul#accordeon li figure figcaption {
@@ -49,11 +49,11 @@
     <style type="text/css"></style>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
-  
+
   <body>
     <h1>Accordéon horizontal</h1>
-    <ul id="accordeon">
-      <li>
+    <ul id="accordeon" x-data="{isOpen: 0}" >
+      <li :class="{actif: isOpen ===1}">
         <figure>
           <img src="https://picsum.photos/100?random=1" alt="" width="102">
           <figcaption>
@@ -62,7 +62,7 @@
           </figcaption>
         </figure>
       </li>
-      <li>
+      <li :class="{actif: isOpen === 2}">
         <figure>
           <img src="https://picsum.photos/100?random=2" alt="" width="102">
           <figcaption>
@@ -71,7 +71,7 @@
           </figcaption>
         </figure>
       </li>
-      <li>
+      <li :class="{actif: isOpen === 3}">
         <figure>
           <img src="https://picsum.photos/100?random=3" alt="" width="102">
           <figcaption>
