@@ -28,29 +28,28 @@
     }
 
     #accordeon li figure {
-     margin: 0;
+    align-items: left;
      display: inline-block;
      width: 317px;
     }
 
     ul#accordeon li figure figcaption {
       width: 200px;
-      padding-left: 10px;
+      padding: 10px;
       display: inline-flex;
+
+
     }
 
-    ul#accordeon li figure h3 {
-      margin: 0px;
-      height: 2em;
-    }
-
-    ul#accordeon li figure p {
-      margin-bottom: 0px;
+    #accordeon li figure figcaption {
+      display: table-cell;
+      vertical-align: top;
     }
     </style>
     <style type="text/css"></style>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
+  
   <body>
     <h1>Accordéon horizontal</h1>
     <ul id="accordeon">
