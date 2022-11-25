@@ -100,5 +100,27 @@
         </figure>
       </li>
     </ul>
+    <script>
+      (function () {
+    "use strict";
+
+    var listeLI = document.querySelectorAll('ul#accordeon>li');
+
+
+    function basculeClassActif() {
+      for (var i = 0; i < listeLI.length; i++) {
+        var unLi = listeLI[i];
+        unLi.classList.remove('actif');
+      }
+      this.classList.add('actif');
+    }
+
+    for (var i = 0; i < listeLI.length; i++) {
+      var unLI = listeLI[i];
+      unLI.addEventListener("click", basculeClassActif);
+    }
+
+  }());
+    </script>
   </body>
 </html>
