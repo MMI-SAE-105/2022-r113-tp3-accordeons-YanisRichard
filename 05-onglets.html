@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Onglets</title>
   </head>
-  <body>
+  <body x-data="{isOpen: 0}">
     <h1>Onglets</h1>
+    <ul role="tablist">
+      <li :class="{actif: isOpen === 1}" role="tab">Onglet1</li>
+      <li :class="{actif: isOpen === 2}" role="tab">Onglet2</li>
+      <li :class="{actif: isOpen === 3}" role="tab">Onglet3</li>
+    </ul>
+
+    div>
   </body>
 </html>
