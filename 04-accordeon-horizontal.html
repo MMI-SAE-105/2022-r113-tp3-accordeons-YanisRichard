@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accordéon horizontal</title>
     <style>
+
       #accordeon {
       display: flex;
       margin: 0;
@@ -15,7 +16,7 @@
       #accordeon li {
       width: 107px;
       overflow: hidden;
-      transition: 1s;
+      transition: width 2s;
       background-color: #EEE;
       list-style-type: none;
       margin: 3px;
@@ -28,23 +29,23 @@
     }
 
     #accordeon li figure {
-    align-items: left;
-    margin: 0;
-    width: 317px;
+     align-items: left;
+     margin: 0;
+     width: 317px;
     }
 
-    ul#accordeon li figure figcaption {
+    #accordeon li figure figcaption {*
       width: 200px;
-      padding: 10px;
-      display: inline-flex;
-
-
-    }
-
-    #accordeon li figure figcaption {
       display: table-cell;
       vertical-align: top;
+
     }
+
+    #accordeon li figure figcaption > * {
+      margin: 0;
+      padding: 0;
+    }
+    
     </style>
     <style type="text/css"></style>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
